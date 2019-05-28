@@ -1,0 +1,309 @@
+h2 {
+	border: solid 2px #ffff;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+div {
+	box-sizing: border-box;
+}
+header {
+
+	height: 700px;	
+}
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+nav {
+	float: right;
+	margin-top: 30px;
+}
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 50px;
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.titles__first {
+	color: #97df;
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 190px;
+}
+.title {
+	padding-top: 15px;
+}
+.title h2 {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 2px;
+}
+.title p {
+	color: #f0e2dd;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 5px;
+}
+section {
+
+	height: 1000px;
+}
+.tems {
+	float: left;
+
+}
+.tems__item:last-child {
+	float: right;
+	margin-right: 100px
+}
+.tems__item {
+	width: 230px;
+	float: left;
+	text-align: center;
+	margin-top: 150px;
+	display: block;
+	margin-right: 400px;
+}
+.tems__item h3 {
+	font-size: 18px;
+	color: #409fd5;
+	margin-bottom: 5px;
+}
+.tems__item p {
+	font-size: 14px;
+	color: #97ccd9;	
+}
+img {
+	 width: 350px;
+	 height: 250px; 
+	 border: none;
+}
+.tems__item:nth-child(2) {
+	margin-left: 40px;
+}
+.block {
+		width: 400px;
+        background-color: #fff;
+        height: 100px;
+        display:block;
+        margin: auto;
+}
+
+
+ {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.portfolio-wrap {
+	max-width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 190px;
+}
+.portfolio-item {
+
+	padding: 10px;
+}
+.portfolio-item-wrap {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	background: black;
+	color: white;
+}
+.portfolio-item img {
+	display: block;
+	width: 100%;
+	opacity: .75;
+	transition: .5s ease-in-out;
+}
+.portfolio-item-inner {
+	position: absolute;
+	top: 45%;
+	left: 7%;
+	right: 7%;
+	bottom: 45%;
+	border: 1px solid white;
+	border-width: 0 1px 1px;
+	transition: .4s ease-in-out;
+}
+.portfolio-heading {
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+.portfolio-heading h3 {
+	font-family: 'Pattaya', sans-serif;
+	font-weight: normal;
+	display: table;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+}
+.portfolio-heading h3:before,
+.portfolio-heading h3:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 50px;	
+	height: 1px;
+	background: white;
+}
+.portfolio-heading h3:before {
+	left: -50px;
+}
+.portfolio-heading h3:after {
+	right: -50px;
+}
+.portfolio-item-inner ul {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	padding: 0 20px;
+	opacity: 0;
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	transition: .4s ease-in-out;
+}
+.portfolio-item-inner li {
+	position: relative;
+	right: 25px;
+	font-size: 12px;
+	padding: 10px 0;
+	margin-bottom: 4px;
+}
+.portfolio-item-inner li:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -2px;
+	bottom: -4px;
+	width: 4px;	
+	height: 4px;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 10px 0 0 white, -10px 0 0 white; 
+}
+.portfolio-item-inner li:last-child:after {
+	content: none;
+}
+.portfolio-item a {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+}
+.portfolio-item:hover img {
+	opacity: 0.45;
+	transform: scale(1.1);
+}
+.portfolio-item:hover .portfolio-item-inner {
+	top: 7%;
+	bottom: 7%;
+}
+.portfolio-item:hover ul {
+	opacity: 1;
+	transition-delay: .5s;
+}
+@media (min-width: 530px) {
+	.portfolio-item {
+		flex-basis: 50%;
+		flex-shrink: 0;	
+	}
+}
+@media (min-width: 768px) {
+	.portfolio-item {
+		flex-basis: 33.333333333%;			
+	}
+}
+CSS
+Пример 2. Блок со скриншотом веб-страницы
+<div class="portfolio-item">
+	<div class="portfolio-wrapper">
+		<div class="heading">
+			<h3>Адаптивный дизайн</h3>
+		</div>
+		<div class="thumbnail">
+			<a href="" target="_blank">
+				<img src="https://html5book.ru/wp-content/uploads/2017/06/screenshort.jpg">
+			</a>
+		</div>
+	</div>
+</div>
+HTML
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+		background: url(../img/hid2.jpg) no-repeat center top / cover;
+}
+.portfolio-item {
+	max-width: 300px;
+	margin: 50px auto;
+}
+.portfolio-wrapper {
+	position: relative;
+	background: #CFC9BA;
+}
+.portfolio-wrapper:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -29px;
+	left: 0;	
+	width: 105%;
+	height: 50px;
+	background: #EAE7D8;
+	transform: rotate(-4deg);
+}
+.heading  h3 {  
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 20px 0;
+}
+.thumbnail {
+	position: relative;
+	padding-bottom: 98%;
+	overflow: hidden;
+}
+.thumbnail img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	cursor: pointer;  
+	transform: translateY(0%);
+	transition: 3.5s;
+}
+.thumbnail:hover img {
+	transform: translateY(-100.5%);
+}
