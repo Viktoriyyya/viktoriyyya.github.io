@@ -1,0 +1,84 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	background: #767d;
+}
+.hidden {
+	display: none;
+}
+
+.masonry-container {
+	padding: 0;
+}
+.grid-sizer {
+	width: 25%;
+	float: left;
+	min-height: 1px;
+}
+.item {
+	height: 33.34vh;
+}
+.item img {
+	width: 100%;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+nav {
+	float: right;
+	margin-top: 30px;
+	background: url(../img/menu.jpg) no-repeat center top / cover;
+	font-size: 30px;
+}
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 50px;
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+div {
+	box-sizing: border-box;
+}
+header {
+	background: url(../img/fon2.jpg) no-repeat center top / cover;
+	height: 970px;	
+}
